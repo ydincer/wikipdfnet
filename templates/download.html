@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<p class="lead" >
+    <div class="container" align="center" style="margin: auto;">
+    <p class="lead">You can download PDF file Please press Download button</p>
+    <br>
+       <a href="{{ url_for('download') }}"  class="btn btn-lg btn-secondary" >Download Pdf File</a>
+     </div>
+  </p>
+
+{% endblock body %}

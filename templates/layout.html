@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script data-ad-client="ca-pub-6488111316697126" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Wikipedia to PDF">
+  <title>Wikipedia to Pdf</title>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="http://wikipdf.net/" />
+  <!-- Bootstrap core CSS -->
+  <link href={{ url_for('static', filename='bootstrap.min.css' ) }} rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href={{ url_for('static', filename='cover.css' ) }} rel="stylesheet">
+  {% from "_formhelpers.html" import render_field %}
+</head>
+
+<body class="text-center">
+{% block body %}
+  
+{% endblock body %}
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">wikipdf.net</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link active" href="#">Pdf</a>
+          <a class="nav-link" href="#">Text</a>
+          <a class="nav-link" href="#">Excel</a>
+        </nav>
+      </div>
+    </header>
+
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">Convert Wikipedia to PDF</h1>
+
+      {% from "_formhelpers.html" import render_field %}
+      <form method=post action="{{ url_for('download') }}">       
+          {{ render_field(form.url) }}
+        <input type=submit value="Download PDF File"  class="btn btn-lg btn-secondary">          
+      </form>
+    </main>
+   
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>wikipdf.net</p>
+      </div>
+    </footer>
+  </div>
+{% endblock body %}
